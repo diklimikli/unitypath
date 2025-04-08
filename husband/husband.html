@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Férj – Lelki Tér</title>
+  <link rel="stylesheet" href="husband.css" />
+  <style>
+    body {
+      font-family: 'Courier New', monospace;
+      background: #f8f5f0;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .page {
+      max-width: 800px;
+      margin: 0 auto;
+      background: #fffefc;
+      border: 1px solid #ccc;
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      position: relative;
+      background-image: repeating-linear-gradient(
+        to bottom,
+        transparent,
+        transparent 28px,
+        rgba(0,0,0,0.05) 29px
+      );
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.95);
+      border-left: 5px solid #2f4f4f;
+      margin-bottom: 25px;
+      padding: 20px;
+      position: relative;
+      border-radius: 5px;
+    }
+
+    .card h3 {
+      margin-top: 0;
+      font-size: 1.4rem;
+    }
+
+    .card p {
+      font-size: 1.1rem;
+    }
+
+    .task-checkbox {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      transform: scale(1.4);
+    }
+
+    #progress-bar-section {
+      margin-top: 30px;
+    }
+
+    .progress-bar-container {
+      height: 20px;
+      background: #ddd;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .progress-bar {
+      height: 100%;
+      background: #2f4f4f;
+      text-align: center;
+      color: white;
+      font-weight: bold;
+      transition: width 0.4s ease;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .btn {
+      background: #2f4f4f;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    @media (max-width: 600px) {
+      .page {
+        padding: 20px;
+      }
+      .card {
+        padding: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <h1>Kedves Férj!</h1>
+      <p>"A férj szeresse feleségét, mint saját testét..." (Efézus 5:28)</p>
+    </header>
+
+    <!-- Projekt célja és emlékeztető -->
+    <section id="project-goal">
+      <h2>Napi teendők</h2>
+      <p>Ez az oldal egy személyes lelki útinapló. A jegyzetfüzet stílus azt jelképezi, hogy minden nap egy új lap az életed történetében. Ahhoz, hogy igazán hasznos legyen, ajánlott kézzel is vezetni egy valódi jegyzetfüzetet.</p>
+    </section>
+
+    <!-- Imatéma -->
+    <section id="prayer-topic" class="card">
+      <div>
+        <h3>Mai Imatéma</h3>
+        <p>Az imatéma itt jelenik meg.</p>
+      </div>
+      <input type="checkbox" class="task-checkbox" data-id="prayer-topic" />
+    </section>
+
+    <!-- Önismereti kérdés -->
+    <section id="self-discovery-question" class="card">
+      <div>
+        <h3>Önismereti Kérdés</h3>
+        <p>Az önismereti kérdés itt jelenik meg.</p>
+      </div>
+      <input type="checkbox" class="task-checkbox" data-id="self-discovery-question" />
+    </section>
+
+    <!-- Emléktárház -->
+    <section id="memory-vault" class="card">
+      <div>
+        <h3>Emléktárház</h3>
+        <p>Az emléktárház itt jelenik meg.</p>
+      </div>
+      <input type="checkbox" class="task-checkbox" data-id="memory-vault" />
+    </section>
+
+    <!-- Feladat a feleséghez -->
+    <section id="task" class="card">
+      <div>
+        <h3>Mai Feladat</h3>
+        <p>Feladat a feleségedhez itt jelenik meg.</p>
+      </div>
+      <input type="checkbox" class="task-checkbox" data-id="task" />
+    </section>
+
+    <!-- Kihívás a férjnek -->
+    <section id="challenge" class="card">
+      <div>
+        <h3>Mai Kihívás</h3>
+        <p>Kihívás itt jelenik meg.</p>
+      </div>
+      <input type="checkbox" class="task-checkbox" data-id="challenge" />
+    </section>
+
+    <!-- Reflexió -->
+    <section id="reflection" class="card">
+      <div>
+        <h3>Mai Reflexió</h3>
+        <p>Reflexió itt jelenik meg.</p>
+      </div>
+      <input type="checkbox" class="task-checkbox" data-id="reflection" />
+    </section>
+
+    <!-- Progress Bar -->
+    <section id="progress-bar-section">
+      <h3>Haladás</h3>
+      <div class="progress-bar-container">
+        <div class="progress-bar" style="width: 0%;">
+          <div class="progress-bar-text">0%</div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <a href="../index.html" class="btn">⬅ Vissza a főoldalra</a>
+    </footer>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Lelki Tér | Minden jog fenntartva</p>
+  </footer>
+
+  <script src="husband.js"></script>
+</body>
+</html>
