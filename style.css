@@ -3,7 +3,7 @@ body {
   font-family: 'Space Mono', monospace;
   margin: 0;
   padding: 0;
-  background-image:url("https://pixabay.com/get/g4e965563b5df62b7d5a511d89dc8d97ce553088da4f8ccadef6d93c2bb76f3a7aaee533c662a32234efe590b7a8808d0710dd63b0f87e37a33038f516e683867_1920.jpg");
+  background-image:url("bg.jpg");
   color: #fff;
   display: flex;
   justify-content: center;
