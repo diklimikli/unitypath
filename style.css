@@ -1,9 +1,10 @@
-/* style.css */
 body {
   font-family: 'Space Mono', monospace;
   margin: 0;
   padding: 0;
-  background-image:url("bg.jpg");
+  background-image: url("bg_m.jpg"); /* Mobil háttérkép */
+  background-size: cover;
+  background-position: center;
   color: #fff;
   display: flex;
   justify-content: center;
@@ -110,7 +111,7 @@ footer {
   background-color: #4b5bff;
 }
 
-/* Mobile Optimizations */
+/* Mobil Optimalizációk */
 @media (max-width: 768px) {
   .glass-card {
     padding: 1.5rem;
@@ -156,7 +157,7 @@ footer {
   }
 }
 
-/* Very small devices (phones, < 480px) */
+/* Nagyon kis eszközök (telefonok, < 480px) */
 @media (max-width: 480px) {
   .glass-card {
     padding: 1rem;
