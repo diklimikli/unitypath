@@ -1,5 +1,5 @@
 // script.js – dinamikus napi tartalom betöltés és megjelenítés
-
+import { Analytics } from "@vercel/analytics/react"
 // A mai dátum lekérése
 const getCurrentDate = () => {
     const today = new Date();
